@@ -7,6 +7,7 @@ public class firstHomeWork {
         third(-3);
         fourth(0);
         fifth("Игорь");
+        sixth(22);
     }
 
     /* Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат,
@@ -57,5 +58,17 @@ public class firstHomeWork {
 
         private static void fifth(String a) {
             System.out.println("Привет, " + a + "!");
+        }
+
+    /* *Написать метод, который определяет, является ли год високосным, и выводит сообщение
+        в консоль. Каждый 4-й год является високосным, кроме каждого 100-го,
+        при этом каждый 400-й – високосный. */
+
+        private static void sixth(int a) {
+            if (a % 4 == 0 && a % 100 != 0 || a % 400 == 0) {
+                System.out.println("Сейчас високосный год");
+            } else {
+                System.out.println("Сейчас не високосный год");
+            }
         }
 }
