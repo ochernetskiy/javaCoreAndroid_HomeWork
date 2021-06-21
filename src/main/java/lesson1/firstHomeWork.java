@@ -5,6 +5,7 @@ public class firstHomeWork {
         first(12,10,24,18);
         second(12,8);
         third(-3);
+        fourth(0);
     }
 
     /* Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат,
@@ -37,6 +38,19 @@ public class firstHomeWork {
                 System.out.println("Введено положительное число");
             } else {
                 System.out.println("Введено отрицательное число");
+            }
+            return a;
+        }
+
+    /* Написать метод, которому в качестве параметра передается целое число.
+        Метод должен вернуть true, если число отрицательное,
+        и вернуть false если положительное. */
+
+        private static int fourth(int a) {
+            if (a < 0) {
+                System.out.println(10==10);
+            } else {
+                System.out.println(10!=10);
             }
             return a;
         }
