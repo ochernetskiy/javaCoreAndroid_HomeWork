@@ -1,6 +1,6 @@
 package lesson1;
 
-public class firstHomeWork {
+public class FirstHomeWork {
     public static void main(String[]args) {
         first(12,10,24,18);
         second(12,8);
