@@ -7,6 +7,7 @@ public class HomeWork2 {
         integerArray();
         emptyArray();
         anotherArray();
+        squareArray();
     }
 
     //        Задать целочисленный массив, состоящий из элементов 0 и 1.
@@ -41,9 +42,25 @@ public class HomeWork2 {
         int[] anotherArr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         for (int i = 0; i < anotherArr.length; i++) {
             if (anotherArr[i] < 6) anotherArr[i] *= 2;
-            }
+        }
 
         System.out.println(Arrays.toString(anotherArr));
     }
+
+    //    Создать квадратный двумерный целочисленный массив (количество строк и столбцов одинаковое),
+    //    и с помощью цикла(-ов) заполнить его диагональные элементы единицами;
+
+    private static void squareArray() {
+        int[][] squareArr = new int[3][3];
+        for (int i = 0; i < squareArr.length; i++) {
+            for (int j = 0; j < squareArr.length; j += 2) {
+                squareArr[i][j] += 1;
+            }
+        }
+
+        System.out.println(Arrays.deepToString(squareArr));
+    }
+
+
 
 }
