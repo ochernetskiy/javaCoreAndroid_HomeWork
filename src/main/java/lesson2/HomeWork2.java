@@ -6,6 +6,7 @@ public class HomeWork2 {
     public static void main(String[] args) {
         integerArray();
         emptyArray();
+        anotherArray();
     }
 
     //        Задать целочисленный массив, состоящий из элементов 0 и 1.
@@ -32,6 +33,17 @@ public class HomeWork2 {
         }
 
         System.out.println(Arrays.toString(emptyArr));
+    }
+
+    //    Задать массив [ 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 ] пройти по нему циклом, и числа меньшие 6 умножить на 2;
+
+    private static void anotherArray() {
+        int[] anotherArr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < anotherArr.length; i++) {
+            if (anotherArr[i] < 6) anotherArr[i] *= 2;
+            }
+
+        System.out.println(Arrays.toString(anotherArr));
     }
 
 }
