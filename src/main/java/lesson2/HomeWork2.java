@@ -53,14 +53,13 @@ public class HomeWork2 {
     private static void squareArray() {
         int[][] squareArr = new int[3][3];
         for (int i = 0; i < squareArr.length; i++) {
-            for (int j = 0; j < squareArr.length; j += 2) {
-                squareArr[i][j] += 1;
+            for (int j = 0; j < squareArr[i].length; j++) {
+                if (i == j) squareArr[i][j] = 1;
+                if (j == squareArr.length - 1 - i) squareArr[i][j] = 1;
             }
+            System.out.println(Arrays.toString(squareArr[i]));
         }
-
-        System.out.println(Arrays.deepToString(squareArr));
     }
-
 
 
 }
