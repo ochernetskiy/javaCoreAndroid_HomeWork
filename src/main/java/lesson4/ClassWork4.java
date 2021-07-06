@@ -71,7 +71,7 @@ public class ClassWork4 {
      * ** Сделать проверку на произвольные размеры поля и длину последовательности
      */
     private static boolean checkWin(char dot) {
-        //hor
+        //horizontal
         if (field[0][0] == dot && field[0][1] == dot && field[0][2] == dot) return true;
         if (field[1][0] == dot && field[1][1] == dot && field[1][2] == dot) return true;
         if (field[2][0] == dot && field[2][1] == dot && field[2][2] == dot) return true;
