@@ -6,11 +6,11 @@ public class Worker {
     private String position;
     private String email;
     private int phoneNumber;
-    private double salary;
+    private int salary;
     private int age;
 
     //Конструктор класса должен заполнять эти поля при создании объекта.
-    public Worker(String fullName, String position, String email, int phoneNumber, double salary, int age) {
+    public Worker(String fullName, String position, String email, int phoneNumber, int salary, int age) {
         this.fullName = fullName;
         this.position = position;
         this.email = email;
@@ -22,5 +22,9 @@ public class Worker {
     //Внутри класса «Сотрудник» написать метод, который выводит информацию об объекте в консоль.
     public void printInfo() {
         System.out.printf("Worker: %s, his position: %s, his email: %s, his phoneNumber: %d, his salary: %d, his age: %d\n", this.fullName, this.position, this.email, this.phoneNumber, this.salary, this.age);
+    }
+
+    public int getAge() {
+        return age;
     }
 }
